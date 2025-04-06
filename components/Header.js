@@ -19,11 +19,11 @@ export default function Header() {
 
         {/* Desktop Nav */}
         <nav className="hidden md:flex space-x-6 text-sm font-medium">
-          <a href="#gallery" className="hover:text-indigo-600 transition">
+          <a href="#listen" className="hover:text-indigo-600 transition">
             Listen
           </a>
-          <a href="#about" className="hover:text-indigo-600 transition">
-            About
+          <a href="#shows" className="hover:text-indigo-600 transition">
+            Shows
           </a>
           <a href="#contact" className="hover:text-indigo-600 transition">
             Contact

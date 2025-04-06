@@ -1,7 +1,7 @@
 import Header from "@/components/Header";
 import Hero from "@/components/Hero";
 import Listen from "@/components/Listen";
-import About from "@/components/About";
+import TourDates from "@/components/Shows";
 import Footer from "@/components/Footer";
 
 export default function Home() {
@@ -13,11 +13,11 @@ export default function Home() {
 
       <main>
         <Hero />
-        <section id="gallery">
+        <section id="Listen">
           <Listen />
         </section>
-        <section id="about">
-          <About />
+        <section id="Tour">
+          <TourDates />
         </section>
       </main>
 
