@@ -2,8 +2,22 @@ import React from "react";
 
 export default function Listen() {
   return (
-    <section id="listen" className="w-full py-12 bg-background">
-      <div className="container mx-auto px-4">
+    <section
+      id="listen"
+      className="relative w-full py-8 bg-background overflow-hidden"
+    >
+      {/* Pattern Background Overlay */}
+      <div
+        className="absolute inset-0 opacity-20 z-0 pointer-events-none"
+        style={{
+          backgroundImage: `url("data:image/svg+xml,%3Csvg width='20' height='20' viewBox='0 0 4 4' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M-1,1 l2,-2 M0,4 l4,-4 M3,5 l2,-2' stroke='%23ffffff' stroke-width='0.5'/%3E%3C/svg%3E")`,
+          backgroundRepeat: "repeat",
+          backgroundSize: "20px 20px",
+        }}
+      />
+
+      {/* Actual Section Content */}
+      <div className="relative z-10 container mx-auto px-4">
         <h2 className="text-3xl text-white font-bold text-center mb-8">
           LISTEN
         </h2>
@@ -28,7 +42,7 @@ export default function Listen() {
           </div>
         </div>
 
-        {/* Spotify Row (added mt-12 to give space from SoundCloud row) */}
+        {/* Spotify Row */}
         <div className="flex flex-col md:flex-row justify-between space-y-8 md:space-y-0 md:space-x-8 mt-12">
           <div className="w-full md:w-1/2">
             <iframe
