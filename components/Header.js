@@ -1,11 +1,16 @@
+"use client";
+
+import { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
 
 export default function Header() {
+  const [isOpen, setIsOpen] = useState(false);
+
   return (
-    <div className="w-full shadow-md sticky top-0 z-50">
-      <div className="max-w-6xl mx-auto px-4 py-4 flex items-center justify-between">
-        {/* Site Logo */}
+    <header className="w-full shadow-md sticky top-0 z-50 bg-background">
+      <div className="max-w-6xl mx-auto px-4 py-4 flex items-center justify-between relative">
+        {/* Logo */}
         <Link href="/" className="flex items-center">
           <Image
             src="/images/logo-ricco.svg"
@@ -19,19 +24,23 @@ export default function Header() {
 
         {/* Desktop Nav */}
         <nav className="hidden md:flex space-x-6 text-sm font-medium">
-          <a href="#listen" className="hover:text-indigo-600 transition">
-            Listen
+          <a href="#listen" className="hover:text-indigo-400 transition">
+            LISTEN
           </a>
-          <a href="#shows" className="hover:text-indigo-600 transition">
-            Shows
+          <a href="#shows" className="hover:text-indigo-400 transition">
+            SHOWS
           </a>
-          <a href="#contact" className="hover:text-indigo-600 transition">
-            Contact
+          <a href="#contact" className="hover:text-indigo-400 transition">
+            CONTACT
           </a>
         </nav>
 
-        {/* Mobile Menu Icon */}
-        <button className="md:hidden focus:outline-none">
+        {/* Hamburger */}
+        <button
+          className="md:hidden focus:outline-none"
+          onClick={() => setIsOpen(!isOpen)}
+          aria-label="Toggle menu"
+        >
           <Image
             src="/images/hamburger-ricco.svg"
             alt="Menu"
@@ -41,6 +50,35 @@ export default function Header() {
           />
         </button>
       </div>
-    </div>
+
+      {/* Mobile Overlay Menu */}
+      {isOpen && (
+        <div className="absolute top-full left-0 w-full bg-background px-4 pb-4 pt-2 shadow-md z-40">
+          <nav className="flex flex-col space-y-4 text-center text-sm font-medium">
+            <a
+              href="#listen"
+              onClick={() => setIsOpen(false)}
+              className="hover:text-indigo-400 transition"
+            >
+              LISTEN
+            </a>
+            <a
+              href="#shows"
+              onClick={() => setIsOpen(false)}
+              className="hover:text-indigo-400 transition"
+            >
+              SHOWS
+            </a>
+            <a
+              href="#contact"
+              onClick={() => setIsOpen(false)}
+              className="hover:text-indigo-400 transition"
+            >
+              CONTACT
+            </a>
+          </nav>
+        </div>
+      )}
+    </header>
   );
 }

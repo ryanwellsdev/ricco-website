@@ -5,7 +5,7 @@ export default function Listen() {
     <section id="listen" className="w-full py-12 bg-background">
       <div className="container mx-auto px-4">
         <h2 className="text-3xl text-white font-bold text-center mb-8">
-          Listen
+          LISTEN
         </h2>
 
         {/* SoundCloud Row */}
