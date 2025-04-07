@@ -37,13 +37,11 @@ export default function Hero() {
       </div>
 
       {/* Desktop Layout */}
-      <div className="hidden md:flex w-full h-full justify-center items-center px-24">
-        {/* Desktop Image: Ricco 4 combined image */}
-        <div className="relative w-full h-full transform scale-90 translate-y-[-5%]">
-          {" "}
-          {/* Adjusted translation */}
+      <div className="hidden md:flex w-full h-full justify-center items-center">
+        {/* Ricco 4 Image: edge-to-edge cover */}
+        <div className="relative w-full h-full">
           <Image
-            src="/images/ricco-4.png" // Combined image for desktop
+            src="/images/ricco-4.png"
             alt="Ricco Combined Hero"
             fill
             className="object-cover"

@@ -4,25 +4,28 @@ export default function Listen() {
   return (
     <section
       id="listen"
-      className="relative w-full py-8 bg-background overflow-hidden"
+      className="relative w-full py-12 bg-background overflow-hidden"
     >
-      {/* Pattern Background Overlay */}
+      {/* Background Layer */}
       <div
-        className="absolute inset-0 opacity-20 z-0 pointer-events-none"
+        className="absolute inset-0 z-0 opacity-15 pointer-events-none"
         style={{
-          backgroundImage: `url("data:image/svg+xml,%3Csvg width='20' height='20' viewBox='0 0 4 4' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M-1,1 l2,-2 M0,4 l4,-4 M3,5 l2,-2' stroke='%23ffffff' stroke-width='0.5'/%3E%3C/svg%3E")`,
+          backgroundImage: "url('/images/ricco_white_lines.svg')",
           backgroundRepeat: "repeat",
-          backgroundSize: "20px 20px",
+          backgroundSize: "contain",
         }}
       />
 
-      {/* Actual Section Content */}
-      <div className="relative z-10 container mx-auto px-4">
+      {/* Foreground Content */}
+      <div className="relative z-10 w-full max-w-[1440px] px-6 md:px-12 mx-auto">
+        {/* Top Divider */}
+        <div className="w-64 mx-auto border-t-4 border-white mb-12" />
+
         <h2 className="text-3xl text-white font-bold text-center mb-8">
           LISTEN
         </h2>
 
-        {/* SoundCloud Row */}
+        {/* SoundCloud */}
         <div className="flex flex-col md:flex-row justify-between space-y-8 md:space-y-0 md:space-x-8">
           <div className="w-full md:w-1/2">
             <iframe
@@ -42,7 +45,7 @@ export default function Listen() {
           </div>
         </div>
 
-        {/* Spotify Row */}
+        {/* Spotify */}
         <div className="flex flex-col md:flex-row justify-between space-y-8 md:space-y-0 md:space-x-8 mt-12">
           <div className="w-full md:w-1/2">
             <iframe

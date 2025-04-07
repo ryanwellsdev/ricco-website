@@ -30,7 +30,7 @@ export default function Footer() {
   ];
 
   return (
-    <footer className="w-full bg-background py-8">
+    <footer className="w-full bg-background pb-8">
       <div className="flex justify-center items-center space-x-6">
         {icons.map((icon, i) => (
           <a

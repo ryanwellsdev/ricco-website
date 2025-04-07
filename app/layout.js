@@ -3,7 +3,7 @@ import "./globals.css";
 
 const roboto = Roboto({
   subsets: ["latin"],
-  weight: ["400", "500", "700"], // add other weights if needed
+  weight: ["400", "500", "700"],
   variable: "--font-roboto",
 });
 
@@ -15,8 +15,12 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className="className={`${roboto.variable} font-sans bg-background text-white antialiased">
-        {children}
+      <body
+        className={`${roboto.variable} font-sans bg-white text-white antialiased`}
+      >
+        <div className="bg-background w-full max-w-[2880px] mx-auto">
+          {children}
+        </div>
       </body>
     </html>
   );
