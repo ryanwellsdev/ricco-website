@@ -6,6 +6,16 @@ import Image from "next/image";
 export default function Header() {
   const icons = [
     {
+      src: "/images/icons/soundcloud.svg",
+      alt: "SoundCloud",
+      link: "https://soundcloud.com/riccomusicofficial/",
+    },
+    {
+      src: "/images/icons/spotify.svg",
+      alt: "Spotify",
+      link: "https://open.spotify.com/artist/3FWR0ZTvPZCU7hvgWCE1Ls?si=y0cfzm5XRo2VCSrrNiw3nQ&nd=1&dlsi=5abb0c8a598c4ea4/",
+    },
+    {
       src: "/images/icons/bandcamp.svg",
       alt: "Bandcamp",
       link: "https://riccoricco.bandcamp.com/",
@@ -19,16 +29,6 @@ export default function Header() {
       src: "/images/icons/facebook.svg",
       alt: "Facebook",
       link: "https://www.facebook.com/riccoriccoricco/",
-    },
-    {
-      src: "/images/icons/soundcloud.svg",
-      alt: "SoundCloud",
-      link: "https://soundcloud.com/riccomusicofficial/",
-    },
-    {
-      src: "/images/icons/spotify.svg",
-      alt: "Spotify",
-      link: "https://open.spotify.com/artist/3FWR0ZTvPZCU7hvgWCE1Ls?si=y0cfzm5XRo2VCSrrNiw3nQ&nd=1&dlsi=5abb0c8a598c4ea4/",
     },
   ];
 
@@ -65,7 +65,7 @@ export default function Header() {
               rel="noopener noreferrer"
               className="hover:text-indigo-400 transition"
             >
-              JK_GAULTIER
+              JK GAULTIER
             </a>
           </nav>
 

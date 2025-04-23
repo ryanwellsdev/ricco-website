@@ -8,8 +8,11 @@ const roboto = Roboto({
 });
 
 export const metadata = {
-  title: "Ricco Portfolio",
-  description: "Official portfolio site for Ricco",
+  title: "Ricco | DJ + Producer",
+  description: "Ricco from Vancouver Canada",
+  icons: {
+    icon: "/images/favicon.ico",
+  },
 };
 
 export default function RootLayout({ children }) {
