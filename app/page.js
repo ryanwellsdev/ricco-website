@@ -3,6 +3,7 @@ import Hero from "@/components/Hero";
 import Listen from "@/components/Listen";
 import TourDates from "@/components/Shows";
 import Footer from "@/components/Footer";
+import About from "@/components/About";
 
 export default function Home() {
   return (
@@ -13,11 +14,14 @@ export default function Home() {
 
       <main>
         <Hero />
-        <section id="Listen">
+        <section id="listen">
           <Listen />
         </section>
-        <section id="Tour">
+        <section id="tour">
           <TourDates />
+        </section>
+        <section id="about">
+          <About />
         </section>
       </main>
 

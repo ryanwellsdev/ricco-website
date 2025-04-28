@@ -11,7 +11,7 @@ export default function Shows() {
   }, []);
 
   return (
-    <section id="shows" className="py-16 text-white bg-background">
+    <section id="shows" className="pt-16 pb-8 text-white bg-background">
       <div className="w-full max-w-4xl px-6 md:px-16 mx-auto">
         {/* Top Divider */}
         <div className="w-64 mx-auto border-t-4 border-white mb-12" />
@@ -44,9 +44,6 @@ export default function Shows() {
             </div>
           ))}
         </div>
-
-        {/* Bottom Divider */}
-        <div className="w-64 mx-auto border-t-4 border-white mt-12" />
       </div>
     </section>
   );
