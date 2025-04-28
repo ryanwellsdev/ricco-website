@@ -48,7 +48,7 @@ export default function Header() {
         </Link>
 
         {/* Nav + Socials */}
-        <div className="flex flex-col items-start justify-center space-y-2 text-lg font-semibold text-white">
+        <div className="flex flex-col items-start justify-center space-y-2 text-sm md:text-lg font-semibold text-white">
           {/* Navigation Links */}
           <nav className="flex items-center space-x-3 tracking-wide">
             <a href="#listen" className="hover:text-indigo-400 transition">
@@ -57,6 +57,10 @@ export default function Header() {
             <span className="text-gray-500">|</span>
             <a href="#shows" className="hover:text-indigo-400 transition">
               SHOWS
+            </a>
+            <span className="text-gray-500">|</span>
+            <a href="#about" className="hover:text-indigo-400 transition">
+              ABOUT
             </a>
             <span className="text-gray-500">|</span>
             <a
