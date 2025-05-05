@@ -34,7 +34,7 @@ export default function Header() {
 
   return (
     <header className="w-full bg-background shadow-md sticky top-0 z-50">
-      <div className="w-full max-w-[2880px] mx-auto px-6 py-6 flex items-center justify-between">
+      <div className="w-full max-w-[2880px] mx-auto px-4 py-6 flex items-center justify-between">
         {/* Logo */}
         <Link href="/" className="flex items-center h-full">
           <Image
@@ -43,14 +43,14 @@ export default function Header() {
             width={200}
             height={80}
             priority
-            className="h-20 w-auto object-contain"
+            className="h-12 sm:h-16 md:h-20 w-auto object-contain max-w-full"
           />
         </Link>
 
         {/* Nav + Socials */}
-        <div className="flex flex-col items-start justify-center space-y-2 text-sm md:text-lg font-semibold text-white">
+        <div className="flex flex-col items-start justify-center space-y-2 text-xs md:text-lg font-semibold text-white">
           {/* Navigation Links */}
-          <nav className="flex items-center space-x-3 tracking-wide">
+          <nav className="flex items-center space-x-2 tracking-wide">
             <a href="#listen" className="hover:text-indigo-400 transition">
               LISTEN
             </a>
@@ -67,7 +67,7 @@ export default function Header() {
               href="https://www.instagram.com/jk_gaultier/"
               target="_blank"
               rel="noopener noreferrer"
-              className="hover:text-indigo-400 transition"
+              className="hover:text-indigo-400 text-nowrap transition"
             >
               JK GAULTIER
             </a>
@@ -75,7 +75,7 @@ export default function Header() {
 
           {/* Social Icons */}
           <div className="w-full flex justify-end">
-            <div className="flex items-center space-x-5 pr-1">
+            <div className="flex items-center space-x-3">
               {icons.map((icon, i) => (
                 <a
                   key={i}
@@ -87,9 +87,9 @@ export default function Header() {
                   <Image
                     src={icon.src}
                     alt={icon.alt}
-                    width={32}
-                    height={32}
-                    className="w-8 h-8"
+                    width={24}
+                    height={24}
+                    className="w-6 h-6 sm:w-7 sm:h-7 md:w-8 md:h-8"
                   />
                 </a>
               ))}

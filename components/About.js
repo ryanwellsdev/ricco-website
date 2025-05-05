@@ -12,7 +12,7 @@ export default function About() {
 
         <h2 className="text-3xl font-bold mb-8">ABOUT</h2>
 
-        <div className="space-y-6 text-lg leading-relaxed text-gray-300">
+        <div className="space-y-6 text-base sm:text-lg leading-relaxed text-gray-300">
           <p>
             A true creative, Ricco finds inspiration in music by exploring
             sounds through DJing and producing. He is a passionate house music
