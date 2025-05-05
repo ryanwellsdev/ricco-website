@@ -50,7 +50,7 @@ export default function Listen() {
           <div className="w-full md:w-1/2">
             <iframe
               style={{ borderRadius: "12px" }}
-              src="https://open.spotify.com/embed/playlist/4ZsnrgxejOjUV5TEr71NTd?utm_source=generator&theme=0"
+              src="https://open.spotify.com/embed/playlist/0CaUU96uVOLzc4BUSfIkwr?utm_source=generator&theme=0"
               width="100%"
               height="352"
               allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"

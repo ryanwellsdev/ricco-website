@@ -10,7 +10,7 @@ const roboto = Roboto({
 export const metadata = {
   title: "Ricco | DJ + Producer",
   description:
-    "Official site for Ricco, a Vancouver-based DJ and producer. Listen to mixes, view tour dates, and explore new music.",
+    "Discover Canadian based dj/Producer Ricco. Analog and Digital. The odd musical delight.",
   icons: {
     icon: "/images/favicon.ico",
   },
