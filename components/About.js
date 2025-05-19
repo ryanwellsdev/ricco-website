@@ -41,7 +41,7 @@ export default function About() {
           </p>
           <p>
             Since 2020, Ricco has expanded into music production, collaborating,
-            remixing, and releasing over a dozen tracks across various labels.
+            remixing, and releasing music independently.
           </p>
           <p>
             Beyond DJing and producing, Ricco is actively involved in the scene

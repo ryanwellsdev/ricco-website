@@ -30,6 +30,11 @@ export default function Header() {
       alt: "Facebook",
       link: "https://www.facebook.com/riccoriccoricco/",
     },
+    {
+      src: "/images/icons/applemusic.svg",
+      alt: "Apple",
+      link: "https://music.apple.com/tr/artist/ricco/1616442006",
+    },
   ];
 
   return (
